@@ -13,7 +13,7 @@ import (
 )
 
 func emitEvent(nc *nats.Conn) {
-	subj := "trades.booked"
+	subj := "trades.booking"
 	e := []byte("trade.booking.booked")
 
 	nc.Publish(subj, e)
